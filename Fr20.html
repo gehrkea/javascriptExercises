@@ -1,0 +1,40 @@
+<doctype! html>
+<html>
+<head>
+    <script>
+    
+        function whichMonth(month) {
+
+            var months = {1:"Januar",2:"Februar",3:"März",4:"April",5:"Mai",6:"Juni",7:"Juli",8:"August",9:"September",10:"Oktober",11:"November",12:"Dezember"};
+
+            for (var mthnum in months) {
+
+                if (mthnum == month) {
+
+                    console.log("Monat Nr. " + month + " heißt " + months[mthnum]);
+                }
+            }
+
+            //einfachere Variante
+            
+            if (month <13 && month >0) {
+                console.log("Einfachere Variante: " + months[month]);
+            }
+
+            else 
+                {
+                console.log("So einen Monat gibt es nicht!");
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+ <button onclick="whichMonth(10)">Check month 10</button>   
+ <button onclick="whichMonth(13)">Check month 13</button>   
+</body>
+
+</html>

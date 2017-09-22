@@ -1,0 +1,43 @@
+<doctype! html>
+<html>
+<head>
+    <script>
+
+        
+        function isPalindrom(text) {
+
+            var revText = "";
+
+                for (var i in text) {
+
+                    console.log(i + " " + text[text.length-1-i]);
+
+                    revText = revText + text[text.length-1-i];
+            }   	
+
+            console.log(text);
+            console.log(revText);
+
+            if (text == revText)
+                {
+                    console.log("Es sind Palindrome")
+                }
+
+            else
+                {
+                console.log("Es sind keine Palindrome");
+                }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="isPalindrom('1223334444555554444333221')">1223334444555554444333221</button>
+    <button onclick="isPalindrom('madam')">madam</button>
+    <button onclick="isPalindrom('katze')">katze</button>
+    <button onclick="isPalindrom('Anna')">Anna</button>
+    
+</body>
+
+</html>

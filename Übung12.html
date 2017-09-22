@@ -1,0 +1,46 @@
+<doctype! html>
+<html>
+<head>
+    <script>
+
+        var exams = [
+
+           {name: "exam1" = { 
+                                "Titel":"Verteidigung gegen die dunklen Künste", 
+                                "Dozent":"Prof. Moody",
+                                "Zensur": 2,
+                                "Semester":7
+                            },
+           },
+           {name : "exam2" = {
+                                "Titel":"Zaubertränke", 
+                                "Dozent":"Prof. Snape",
+                                "Zensur": 4,
+                                "Semester":7
+                            },
+           }
+        ];
+
+
+        var sum = 0;
+        var i = 0;
+
+        for (note in exams.Zensur) {
+
+            sum = sum + note;
+            i++;
+
+        }
+
+        console.log("Durchsnittsnote Semester 7: " +sum/i);
+
+
+    </script>
+</head>
+
+<body>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<doctype! html>
+<!-- for-in and for-of and forEach() -->
+<html>
+    <head>
+        <script>
+        
+            var book1 = {
+                    author:"J.Austen",
+                    book:"Pride and Prejudice"
+            };
+        
+            var book2 = {
+
+                    author:"S.King",
+                    book:"Carrie"
+            };
+
+            var books = [book1, book2];
+
+            for (var bk in books) {
+
+                console.log(bk);
+                console.log(books[bk]);
+
+            }
+
+            var arr = ["Spring","Summer","Fall", "Winter"];
+
+        arr.forEach(function(elem, index) {
+
+            console.log(index);
+            console.log(elem);
+        })
+
+        // Werte ohne Index
+
+        for (var element of arr) {
+
+            console.log(element);
+        }
+            
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
